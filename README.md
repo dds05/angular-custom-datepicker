@@ -3,7 +3,7 @@
 <p align="center"><a href="https://imgbb.com/"><img src="https://i.ibb.co/0K05Sy2/Datepicker1.png" alt="Datepicker1" border="0"></a></p>
 
 #### Installation:
-1.  npm i angular-custom-datepicker.
+1.  `npm i angular-custom-datepicker`
 
 #### Usage:
 
@@ -31,7 +31,7 @@
      ```
  
 
-2.  Inside any component, simple use as:- 
+2.  Inside any angular component, simple use as:- 
    
 ```
 <date-picker
