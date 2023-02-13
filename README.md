@@ -3,12 +3,35 @@
 <p align="center"><a href="https://imgbb.com/"><img src="https://i.ibb.co/0K05Sy2/Datepicker1.png" alt="Datepicker1" border="0"></a></p>
 
 #### Installation:
-1. npm install , ng serve.
+1.  npm i angular-custom-datepicker.
 
 #### Usage:
-1.  npm i angular-custom-datepicker.
-2.  Inside app.module.ts=> import {AngularCustomDatepickerModule} from 'angular-custom-datepicker';
-3.  Inside any component, simple use as:- 
+
+1.  Inside app.module.ts : 
+    ```
+    import { NgModule } from '@angular/core';
+    import { BrowserModule } from '@angular/platform-browser';
+    import { AppRoutingModule } from './app-routing.module';
+    import { AppComponent } from './app.component';
+    import {AngularCustomDatepickerModule} from 'angular-custom-datepicker';
+
+    @NgModule({
+    declarations: [
+    AppComponent,
+    ],
+    imports: [
+    BrowserModule,
+    AppRoutingModule,
+    AngularCustomDatepickerModule
+    ],
+    providers: [],
+    bootstrap: [AppComponent]
+    })
+    export class AppModule { }
+     ```
+ 
+
+2.  Inside any component, simple use as:- 
    
 ```
 <date-picker
