@@ -2,6 +2,12 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "paths": {
+      "angular-custom-datepicker": [
+        "dist/angular-custom-datepicker/angular-custom-datepicker",
+        "dist/angular-custom-datepicker"
+      ]
+    },
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,

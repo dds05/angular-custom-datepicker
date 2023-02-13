@@ -97,6 +97,37 @@
           }
         }
       }
+    },
+    "angular-custom-datepicker": {
+      "projectType": "library",
+      "root": "projects/angular-custom-datepicker",
+      "sourceRoot": "projects/angular-custom-datepicker/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/angular-custom-datepicker/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/angular-custom-datepicker/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/angular-custom-datepicker/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/angular-custom-datepicker/src/test.ts",
+            "tsConfig": "projects/angular-custom-datepicker/tsconfig.spec.json",
+            "karmaConfig": "projects/angular-custom-datepicker/karma.conf.js"
+          }
+        }
+      }
     }
   },
   "defaultProject": "datepicker"
