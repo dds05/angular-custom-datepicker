@@ -3,8 +3,8 @@
   "description": "Custom Datepicker component for Angular",
   "version": "0.0.2",
   "peerDependencies": {
-    "@angular/common": "^13.3.0",
-    "@angular/core": "^13.3.0"
+    "@angular/common": ">=13.3.0 <18.0.0",
+    "@angular/core": ">=13.3.0 <18.0.0"
   },
   "repository": "https://github.com/dds05/angular-custom-datepicker",
   "homepage": "https://angular-datepicker.netlify.app/",
