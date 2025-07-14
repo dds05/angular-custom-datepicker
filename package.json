@@ -8,6 +8,14 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
+  "keywords": [
+    "angular",
+    "calendar",
+    "datepicker",
+    "calendar-component",
+    "custom-calendar",
+    "custom-datepicker"
+  ],
   "private": true,
   "dependencies": {
     "@angular/animations": "~13.3.0",
