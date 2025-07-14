@@ -1,7 +1,7 @@
 {
   "name": "angular-custom-datepicker",
   "description": "Custom Datepicker component for Angular",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "peerDependencies": {
     "@angular/common": ">=13.3.0 <18.0.0",
     "@angular/core": ">=13.3.0 <18.0.0"
