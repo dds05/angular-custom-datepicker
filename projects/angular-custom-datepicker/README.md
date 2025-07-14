@@ -1,24 +1,55 @@
-# AngularCustomDatepicker
+### *Description: A completely responsive datepicker utility designed for angular components*.
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.0.
+<p align="center"><a href="https://imgbb.com/"><img src="https://i.ibb.co/0K05Sy2/Datepicker1.png" alt="Datepicker1" border="0"></a></p>
 
-## Code scaffolding
+#### Installation:
+1.  `npm i angular-custom-datepicker`
 
-Run `ng generate component component-name --project angular-custom-datepicker` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project angular-custom-datepicker`.
-> Note: Don't forget to add `--project angular-custom-datepicker` or else it will be added to the default project in your `angular.json` file. 
+#### Usage:
 
-## Build
+1.  Inside app.module.ts : 
+    ```
+    import { NgModule } from '@angular/core';
+    import { BrowserModule } from '@angular/platform-browser';
+    import { AppRoutingModule } from './app-routing.module';
+    import { AppComponent } from './app.component';
+    import {AngularCustomDatepickerModule} from 'angular-custom-datepicker';
 
-Run `ng build angular-custom-datepicker` to build the project. The build artifacts will be stored in the `dist/` directory.
+    @NgModule({
+    declarations: [
+    AppComponent,
+    ],
+    imports: [
+    BrowserModule,
+    AppRoutingModule,
+    AngularCustomDatepickerModule
+    ],
+    providers: [],
+    bootstrap: [AppComponent]
+    })
+    export class AppModule { }
+     ```
+ 
 
-## Publishing
+2.  Inside any angular component, simple use as:- 
+   
+```
+<date-picker
+[disabled]="false" // to disable the datepicker
+[placeholder]="Select Date" //placeholder value , String format
+[selectedValue]="selectedVal" // Preselect date ,'YYYY-MM-DD' format
+[min]="minDate" // 'YYYY-MM-DD' format
+[max]="maxDate" // 'YYYY-MM-DD' format
+(SelectedDate)="dateSelected($event)" //Functions which emits the Date-object on selection
+></date-picker>
+```
+*More Information regarding inputs:-*
+```
+1. [min]: (Non-Mandatory)-String (YYYY-MM-DD) To be used when you have to set a minimum date beyond which no date can be selected.
+2. [max]: (Non-Mandatory)-String (YYYY-MM-DD) To be used when you have to set a maximum date exceeding which no date can be selected.
+3. [placeholder]:(Non-Mandatory)-String Value ,Default Value: 'Select Date'.To be used when you have to provide a particular value to the datepicker placeholder.
+4. [selectedValue]: (Non-Mandatory)-String Value (YYYY-MM-DD) To be used when you have to preselect a date.
+5. [disabled]: (Non-Mandatory)-Boolean Value-(true/false) To be used when you have to disable the datepicker though, you can still use [selectedValue].
+6. (SelectedDate) : (Mandatory)-Function . It basically emits the date-object when a user clicks on a particular date.
 
-After building your library with `ng build angular-custom-datepicker`, go to the dist folder `cd dist/angular-custom-datepicker` and run `npm publish`.
-
-## Running unit tests
-
-Run `ng test angular-custom-datepicker` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```
