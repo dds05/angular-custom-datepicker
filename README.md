@@ -2,6 +2,8 @@
 
 <p align="center"><a href="https://imgbb.com/"><img src="https://i.ibb.co/0K05Sy2/Datepicker1.png" alt="Datepicker1" border="0"></a></p>
 
+#### NPM : <ins>https://www.npmjs.com/package/angular-custom-datepicker</ins>
+
 #### Installation:
 1.  `npm i angular-custom-datepicker`
 
