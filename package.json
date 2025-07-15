@@ -1,6 +1,7 @@
 {
-  "name": "datepicker",
+  "name": "angular-custom-datepicker-site",
   "version": "0.0.0",
+  "description": "Custom Datepicker component for Angular",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -29,7 +30,7 @@
     "@fortawesome/angular-fontawesome": "^0.10.2",
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
     "@fortawesome/free-solid-svg-icons": "^5.15.4",
-    "angular-custom-datepicker": "^0.0.1",
+    "angular-custom-datepicker": "^0.0.3",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
